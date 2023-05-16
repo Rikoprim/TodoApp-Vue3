@@ -31,26 +31,24 @@ const props = defineProps({
         </div>
       </div>
     </div>
-    <p class="content">
+    <div class="content">
       {{ props.content }}
-    </p>
+    </div>
     <slot />
   </div>
 </template>
 
 <style lang="postcss" scoped>
 .card {
-  @apply max-w-xs bg-purple100 rounded-xl p-4 overflow-hidden hover:scale-105 transition duration-500;
+  @apply bg-purple100 rounded-xl p-4 hover:scale-105 transition duration-500;
 }
 .card-header {
   @apply flex items-center border-b border-purple50 pb-3;
 }
-
+.content {
+  @apply overflow-y-auto text-white text-sm leading-5 py-4;
+}
 .header-title {
   @apply text-white;
-}
-
-.content {
-  @apply text-white text-sm leading-5 py-4 text-white;
 }
 </style>

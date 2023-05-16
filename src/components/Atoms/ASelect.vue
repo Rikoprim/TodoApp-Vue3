@@ -29,7 +29,7 @@ const vModel = computed({
 
 <template>
   <select v-model="vModel" class="select">
-    <option value="" data-default hidden>Choose</option>
+    <option value="" data-default hidden>Choose condition</option>
     <option v-for="(option, i) in options" :key="`option ${i}`" :value="option.value">
       {{ option.label }}
     </option>

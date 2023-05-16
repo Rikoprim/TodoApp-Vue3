@@ -8,6 +8,6 @@
 
 <style lang="postcss" scoped>
 .label {
-  @apply block text-sm text-white;
+  @apply block text-base font-medium text-white;
 }
 </style>

@@ -51,6 +51,6 @@ const vModel = computed({
 
 <style lang="postcss" scoped>
 .input {
-  @apply w-full placeholder-purple100 text-purple100;
+  @apply w-full placeholder-purple50 text-purple100;
 }
 </style>

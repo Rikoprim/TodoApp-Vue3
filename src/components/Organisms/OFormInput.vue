@@ -11,13 +11,15 @@ import { categories } from '@/misc/constants/options'
 
 import { useNoteStore } from '@/stores'
 
+const dates = new Date().toISOString()
+
 const todo = ref({
   id: 0,
   title: '',
   category: '',
   desc: '',
   status: false,
-  date: new Date()
+  date: dates
 })
 
 const { handleAdd } = useNoteStore()
@@ -34,7 +36,7 @@ const handelReset = () => {
     category: '',
     desc: '',
     status: false,
-    date: new Date()
+    date: dates
   }
 }
 </script>
@@ -44,17 +46,17 @@ const handelReset = () => {
     <div class="w-full h-100">
       <Logo title="Todo App" />
       <div class="mt-4">
-        <Field label="Title">
+        <Field label="Title Task">
           <Input
             class="px-4 py-3 rounded-lg border border-purple50 mt-2 focus:outline-none focus:ring focus:ring-purple50 focus:border-purple50 bg-white"
             type="text"
             v-model="todo.title"
-            placeholder="Enter Title"
+            placeholder="Add task name.."
             :required="true"
             :autofocus="true"
           />
         </Field>
-        <Field label="Category">
+        <Field label="Categories">
           <Select
             class="block w-full mt-2 px-4 py-3 rounded-lg placeholder-purple100 border border-purple50 focus:outline-none focus:ring focus:ring-purple50 focus:border-purple50"
             v-model="todo.category"
@@ -62,7 +64,12 @@ const handelReset = () => {
           />
         </Field>
         <Field label="Description">
-          <Textarea v-model="todo.desc" :required="true" :autofocus="true" />
+          <Textarea
+            v-model="todo.desc"
+            placeholder="Add description.."
+            :required="true"
+            :autofocus="true"
+          />
         </Field>
 
         <Submit @submit="handeleSave" @reset="handelReset" :todos="todo" />

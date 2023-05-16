@@ -8,7 +8,7 @@ import { filters } from '@/misc/constants/options'
 
 import { MagnifyingGlassIcon } from '@heroicons/vue/24/outline'
 
-const emit = defineEmits(['selectFilter'])
+const emit = defineEmits(['selectFilter', 'searchData'])
 
 const filter = ref<string>('all')
 const search = ref<string>('')
@@ -22,8 +22,9 @@ const search = ref<string>('')
     <Input
       class="custom-input text-md"
       type="text"
-      placeholder="Search for title"
-      v-mode="search"
+      placeholder="Find your task"
+      @input="() => emit('searchData', search)"
+      v-model="search"
       :autofocus="true"
     />
     <div class="select">

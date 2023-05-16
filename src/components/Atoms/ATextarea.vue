@@ -10,6 +10,10 @@ const props = defineProps({
     type: Boolean,
     default: false
   },
+  placeholder: {
+    type: String,
+    default: ''
+  },
   autofocus: {
     type: Boolean,
     default: false
@@ -35,6 +39,7 @@ const vModel = computed({
     class="textarea"
     v-model="vModel"
     rows="3"
+    :placeholder="placeholder"
     :autofocus="autofocus"
     :required="required"
   />
