@@ -1,46 +1,39 @@
-# todolist-app-vue3
+## 🔍 About
 
-This template should help get you started developing with Vue 3 in Vite.
+To do application is a web device built with VueJS - 3
 
-## Recommended IDE Setup
+## 🔧 Made With
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- [Vue Js - 3] (https://vuejs.org/)
+- [Vite] (https://vitejs.dev/)
+- [Pinia] (https://pinia.vuejs.org/)
+- [Typescript] (https://www.typescriptlang.org/)
 
-## Type Support for `.vue` Imports in TS
+## 🔌 Installation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Clone the repository to your machine:
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+`https://github.com/Rikoprim/TodoApp-Vue3`
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+After cloning the repository, open your terminal and run:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+Git clone this project
+Yarn install
+Yarn dev
+Running in port :8080
 ```
 
-### Compile and Hot-Reload for Development
+## 🏞 Screenshot
 
-```sh
-npm run dev
-```
+<p align="center">
+  <img src="src/assets/screen/1.png" />
+</p>
 
-### Type-Check, Compile and Minify for Production
+<p align="center">
+  <img src="src/assets/screen/3.png" />
+</p>
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+<p align="center">
+  <img src="src/assets/screen/2.png" />
+</p>
