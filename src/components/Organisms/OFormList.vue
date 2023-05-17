@@ -59,7 +59,7 @@ const handleSearch = (items: INotes[]) => {
 }
 
 const filterItems = computed(() => {
-  if (filter.value === 'read') {
+  if (filter.value === 'done') {
     const dataFilters = data.value.filter((item) => item.status)
     if (search.value) {
       const result = handleSearch(dataFilters)
@@ -68,7 +68,7 @@ const filterItems = computed(() => {
       return dataFilters
     }
   }
-  if (filter.value === 'unread') {
+  if (filter.value === 'progress') {
     const dataFilters = data.value.filter((item) => !item.status)
     if (search.value) {
       const result = handleSearch(dataFilters)

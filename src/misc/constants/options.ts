@@ -8,6 +8,6 @@ export const categories = [
 
 export const filters = [
   { value: 'all', label: 'All' },
-  { value: 'read', label: 'Read' },
-  { value: 'unread', label: 'Unread' }
+  { value: 'progress', label: 'Progress' },
+  { value: 'done', label: 'Done' }
 ]
